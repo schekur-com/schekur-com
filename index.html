@@ -246,4 +246,500 @@
         }
     </script>
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHEKUR | Premium Flow Control Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        schekur: {
+                            navy: '#031A30',
+                            blue: '#1E40AF',
+                            accent: '#0EA5E9',
+                            gray: '#F8FAFC',
+                            slate: '#334155'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-schekur-gray text-slate-900 font-sans flex flex-col min-h-screen antialiased">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-schekur-navy text-white shadow-lg sticky top-0 z-50 backdrop-blur-md bg-opacity-95 border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+            <a href="./index.html" class="flex items-center space-x-2">
+                <img src="assets/images/branding/schekur-logo.png" alt="SCHEKUR" class="h-9 w-auto object-contain" />
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wider">
+                <a href="./index.html" class="text-schekur-accent border-b-2 border-schekur-accent pb-1">HOME</a>
+                <a href="./products.html" class="hover:text-schekur-accent transition-colors pb-1">PRODUCTS</a>
+                <a href="./technical.html" class="hover:text-schekur-accent transition-colors pb-1">TECHNICAL DATA</a>
+                <a href="./contact.html" class="hover:text-schekur-accent transition-colors pb-1">CONTACT</a>
+            </nav>
+            <div class="hidden sm:block">
+                <button onclick="toggleAdminPanel()" class="bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded text-xs font-bold mr-2 transition-all">
+                    ⚙️ Dashboard
+                </button>
+                <a href="./contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-md font-bold text-xs tracking-widest transition-all shadow-md uppercase">
+                    Get A Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-b from-[#021120] via-schekur-navy to-slate-900 text-white py-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="container mx-auto max-w-5xl text-center relative z-10">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-semibold bg-blue-500/10 text-schekur-accent mb-4 border border-blue-500/20 uppercase tracking-widest">
+                Premium Valve Automation & Flow Control
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
+                Engineered for Global<br class="hidden md:inline"/> Industrial Performance
+            </h1>
+            <p class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Discover SCHEKUR's high-reliability rotary actuators, smart integrated solenoid units, and specialized process automation hardware.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#catalog" class="w-full sm:w-auto bg-blue-600 text-white font-bold px-8 py-3.5 rounded-md hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/20 text-sm tracking-wide">
+                    Explore Product Ranges
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PRODUCT CATALOG -->
+    <main id="catalog" class="flex-grow py-20 px-6">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-schekur-navy mb-4 tracking-tight">Our Core Product Ranges</h2>
+                <p class="text-slate-600 max-w-xl mx-auto text-sm md:text-base">High-performance flow management components matching premium technical specifications.</p>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 01 Electric Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-electric" src="assets/images/products/electric-valves.jpg" alt="Electric Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">01</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Electric Valves & Actuators</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">On/off and proportional multi-voltage actuators featuring robust industrial protection enclosures.</p>
+                    </div>
+                </div>
+
+                <!-- 02 Pneumatic Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-pneumatic" src="assets/images/products/pneumatic-valves.jpg" alt="Pneumatic Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">02</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Pneumatic Actuated Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">Double acting and spring return configurations engineered for high-duty precise quarter-turn solutions.</p>
+                    </div>
+                </div>
+
+                <!-- 03 Manual Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-manual" src="assets/images/products/manual-valves.jpg" alt="Manual Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">03</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Manual Industrial Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">Heavy-duty butterfly, ball, and check manual valves offering superior sealing and reliability.</p>
+                    </div>
+                </div>
+
+                <!-- 04 Pressure Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-pressure" src="assets/images/products/pressure-valves.jpg" alt="Pressure Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">04</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Pressure & Safety Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">Precision regulating configurations built for strict industrial overpressure loops.</p>
+                    </div>
+                </div>
+
+                <!-- 05 Solenoid Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-solenoid" src="assets/images/products/solenoid-valves.jpg" alt="Solenoid Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">05</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Industrial Solenoid Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">General purpose, zero-pressure, and direct-acting configurations for fluid lines.</p>
+                    </div>
+                </div>
+
+                <!-- 06 Showcase Lab -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-showcase" src="assets/images/products/rs=w_1280,h_853.webp" alt="SCHEKUR Lab" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">06</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Expert Fluid Series</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">High sensitivity hardware structures calibrated globally under laboratory procedures.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- LIVE CONTROL PANEL (YÖNETİM PANELİ) -->
+    <section id="admin-panel" class="hidden bg-slate-900 text-white border-t-4 border-blue-600 py-10 px-6 fixed bottom-0 left-0 right-0 z-50 max-h-[40vh] overflow-y-auto shadow-2xl backdrop-blur-lg bg-opacity-95">
+        <div class="container mx-auto max-w-4xl">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-lg font-bold text-schekur-accent tracking-wider uppercase">SCHEKUR Live Image Control Panel</h3>
+                <button onclick="toggleAdminPanel()" class="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded text-xs font-bold">Close Panel [X]</button>
+            </div>
+            <p class="text-xs text-slate-400 mb-6">Kod değiştirmeden, doğrudan tarayıcınız üzerinden kartların görsellerini güncelleyin. Yüklediğiniz görseller hafızaya kaydedilir.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-xs">
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">01 Electric Valves:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-electric')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">02 Pneumatic Valves:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-pneumatic')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">03 Manual Valves:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-manual')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">04 Pressure Valves:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-pressure')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">05 Solenoid Valves:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-solenoid')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">06 Expert Showcase:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-showcase')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+            </div>
+            <div class="mt-4 text-right">
+                <button onclick="clearStorage()" class="bg-slate-700 hover:bg-slate-600 text-slate-300 px-3 py-1.5 rounded text-xs font-semibold">Görselleri Sıfırla (Fabrika Ayarları)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-schekur-navy text-white pt-16 pb-8 border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center text-xs text-slate-500">
+            &copy; 2026 SCHEKUR. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- DYNAMIC CONTROL SCRIPT -->
+    <script>
+        // Sayfa yüklendiğinde hafızadaki resimleri kontrol et ve bas
+        window.addEventListener('DOMContentLoaded', () => {
+            const targets = ['img-electric', 'img-pneumatic', 'img-manual', 'img-pressure', 'img-solenoid', 'img-showcase'];
+            targets.forEach(id => {
+                const savedImage = localStorage.getItem(id);
+                if (savedImage) {
+                    document.getElementById(id).src = savedImage;
+                }
+            });
+        });
+
+        // Yönetim panelini aç/kapat
+        function toggleAdminPanel() {
+            const panel = document.getElementById('admin-panel');
+            panel.classList.toggle('hidden');
+        }
+
+        // Resmi yükle ve LocalStorage'a kaydet
+        function uploadImage(event, targetId) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const base64Image = e.target.result;
+                    document.getElementById(targetId).src = base64Image;
+                    localStorage.setItem(targetId, base64Image);
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Hafızayı temizleme fonksiyonu
+        function clearStorage() {
+            if(confirm("Yüklediğiniz tüm resimler silinecek ve orijinal kod yollarına dönülecek. Emin misiniz?")) {
+                localStorage.clear();
+                window.location.reload();
+            }
+        }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHEKUR | Premium Flow Control Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        schekur: {
+                            navy: '#031A30',
+                            blue: '#1E40AF',
+                            accent: '#0EA5E9',
+                            gray: '#F8FAFC',
+                            slate: '#334155'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-schekur-gray text-slate-900 font-sans flex flex-col min-h-screen antialiased">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-schekur-navy text-white shadow-lg sticky top-0 z-50 backdrop-blur-md bg-opacity-95 border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+            <a href="./index.html" class="flex items-center space-x-2">
+                <img src="assets/images/branding/schekur-logo.png" alt="SCHEKUR" class="h-9 w-auto object-contain" />
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wider">
+                <a href="./index.html" class="text-schekur-accent border-b-2 border-schekur-accent pb-1">HOME</a>
+                <a href="./products.html" class="hover:text-schekur-accent transition-colors pb-1">PRODUCTS</a>
+                <a href="./technical.html" class="hover:text-schekur-accent transition-colors pb-1">TECHNICAL DATA</a>
+                <a href="./contact.html" class="hover:text-schekur-accent transition-colors pb-1">CONTACT</a>
+            </nav>
+            <div class="hidden sm:block">
+                <button onclick="toggleAdminPanel()" class="bg-slate-700 hover:bg-slate-600 text-white px-4 py-2 rounded text-xs font-bold mr-2 transition-all">
+                    ⚙️ Dashboard
+                </button>
+                <a href="./contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-md font-bold text-xs tracking-widest transition-all shadow-md uppercase">
+                    Get A Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-b from-[#021120] via-schekur-navy to-slate-900 text-white py-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="container mx-auto max-w-5xl text-center relative z-10">
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-semibold bg-blue-500/10 text-schekur-accent mb-4 border border-blue-500/20 uppercase tracking-widest">
+                Premium Valve Automation & Flow Control
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
+                Engineered for Global<br class="hidden md:inline"/> Industrial Performance
+            </h1>
+            <p class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Discover SCHEKUR's high-reliability rotary actuators, smart integrated solenoid units, and specialized process automation hardware.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#catalog" class="w-full sm:w-auto bg-blue-600 text-white font-bold px-8 py-3.5 rounded-md hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/20 text-sm tracking-wide">
+                    Explore Product Ranges
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PRODUCT CATALOG -->
+    <main id="catalog" class="flex-grow py-20 px-6">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-schekur-navy mb-4 tracking-tight">Our Core Product Ranges</h2>
+                <p class="text-slate-600 max-w-xl mx-auto text-sm md:text-base">High-performance flow management components matching premium technical specifications.</p>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- 01 Electric Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-electric" src="assets/images/products/electric-valves.jpg" alt="Electric Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">01</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Electric Valves & Actuators</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">On/off and proportional multi-voltage actuators featuring robust industrial protection enclosures.</p>
+                    </div>
+                </div>
+
+                <!-- 02 Pneumatic Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-pneumatic" src="assets/images/products/pneumatic-valves.jpg" alt="Pneumatic Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">02</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Pneumatic Actuated Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">Double acting and spring return configurations engineered for high-duty precise quarter-turn solutions.</p>
+                    </div>
+                </div>
+
+                <!-- 03 Manual Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-manual" src="assets/images/products/manual-valves.jpg" alt="Manual Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">03</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Manual Industrial Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">Heavy-duty butterfly, ball, and check manual valves offering superior sealing and reliability.</p>
+                    </div>
+                </div>
+
+                <!-- 04 Pressure Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-pressure" src="assets/images/products/pressure-valves.jpg" alt="Pressure Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">04</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Pressure & Safety Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">Precision regulating configurations built for strict industrial overpressure loops.</p>
+                    </div>
+                </div>
+
+                <!-- 05 Solenoid Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-solenoid" src="assets/images/products/solenoid-valves.jpg" alt="Solenoid Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">05</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Industrial Solenoid Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">General purpose, zero-pressure, and direct-acting configurations for fluid lines.</p>
+                    </div>
+                </div>
+
+                <!-- 06 Showcase Lab -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img id="img-showcase" src="assets/images/products/rs=w_1280,h_853.webp" alt="SCHEKUR Lab" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">06</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2">Expert Fluid Series</h3>
+                        <p class="text-xs text-slate-600 flex-grow mb-4">High sensitivity hardware structures calibrated globally under laboratory procedures.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- LIVE CONTROL PANEL (YÖNETİM PANELİ) -->
+    <section id="admin-panel" class="hidden bg-slate-900 text-white border-t-4 border-blue-600 py-10 px-6 fixed bottom-0 left-0 right-0 z-50 max-h-[40vh] overflow-y-auto shadow-2xl backdrop-blur-lg bg-opacity-95">
+        <div class="container mx-auto max-w-4xl">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-lg font-bold text-schekur-accent tracking-wider uppercase">SCHEKUR Live Image Control Panel</h3>
+                <button onclick="toggleAdminPanel()" class="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded text-xs font-bold">Close Panel [X]</button>
+            </div>
+            <p class="text-xs text-slate-400 mb-6">Kod değiştirmeden, doğrudan tarayıcınız üzerinden kartların görsellerini güncelleyin. Yüklediğiniz görseller hafızaya kaydedilir.</p>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-xs">
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">01 Electric Valves:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-electric')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">02 Pneumatic Valves:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-pneumatic')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">03 Manual Valves:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-manual')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">04 Pressure Valves:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-pressure')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">05 Solenoid Valves:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-solenoid')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+                <div class="bg-slate-800 p-3 rounded border border-slate-700">
+                    <label class="block font-bold mb-1 text-slate-300">06 Expert Showcase:</label>
+                    <input type="file" onchange="uploadImage(event, 'img-showcase')" class="w-full text-slate-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border-0 file:text-xs file:font-semibold file:bg-blue-600 file:text-white hover:file:bg-blue-700 cursor-pointer"/>
+                </div>
+            </div>
+            <div class="mt-4 text-right">
+                <button onclick="clearStorage()" class="bg-slate-700 hover:bg-slate-600 text-slate-300 px-3 py-1.5 rounded text-xs font-semibold">Görselleri Sıfırla (Fabrika Ayarları)</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-schekur-navy text-white pt-16 pb-8 border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center text-xs text-slate-500">
+            &copy; 2026 SCHEKUR. All Rights Reserved.
+        </div>
+    </footer>
+
+    <!-- DYNAMIC CONTROL SCRIPT -->
+    <script>
+        // Sayfa yüklendiğinde hafızadaki resimleri kontrol et ve bas
+        window.addEventListener('DOMContentLoaded', () => {
+            const targets = ['img-electric', 'img-pneumatic', 'img-manual', 'img-pressure', 'img-solenoid', 'img-showcase'];
+            targets.forEach(id => {
+                const savedImage = localStorage.getItem(id);
+                if (savedImage) {
+                    document.getElementById(id).src = savedImage;
+                }
+            });
+        });
+
+        // Yönetim panelini aç/kapat
+        function toggleAdminPanel() {
+            const panel = document.getElementById('admin-panel');
+            panel.classList.toggle('hidden');
+        }
+
+        // Resmi yükle ve LocalStorage'a kaydet
+        function uploadImage(event, targetId) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const base64Image = e.target.result;
+                    document.getElementById(targetId).src = base64Image;
+                    localStorage.setItem(targetId, base64Image);
+                }
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Hafızayı temizleme fonksiyonu
+        function clearStorage() {
+            if(confirm("Yüklediğiniz tüm resimler silinecek ve orijinal kod yollarına dönülecek. Emin misiniz?")) {
+                localStorage.clear();
+                window.location.reload();
+            }
+        }
+    </script>
+</body>
 </html>
