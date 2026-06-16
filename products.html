@@ -23,7 +23,7 @@
         }
     </script>
 </head>
-<body class="bg-schekur-gray text-slate-900 font-sans flex flex-col min-h-screen antialiased">
+<body class="bg-schekur-gray text-slate-900 font-sans flex flex-col min-h-screen antialiased pb-40">
 
     <header class="bg-schekur-navy text-white shadow-lg sticky top-0 z-50 backdrop-blur-md bg-opacity-95 border-b border-slate-800">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
@@ -57,94 +57,4 @@
             
             <div id="electric" class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-2">
                 <div class="bg-slate-50 p-8 flex justify-center items-center min-h-[300px]">
-                    <img id="prod-electric" src="assets/images/products/electric-valves.jpg" alt="Electric Valves" class="max-h-64 object-contain" />
-                </div>
-                <div class="p-8 md:p-12 flex flex-col justify-center">
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Category 01</span>
-                    <h2 class="text-2xl font-bold text-schekur-navy mb-4">Electric Valves & Actuators</h2>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-6">Multi-voltage quarter-turn smart actuators. Equipped with electronic torque limiters, manual overrides, and IP67 weather-proof structural protections perfectly fit for automation plants.</p>
-                    <a href="./contact.html" class="inline-flex justify-center bg-schekur-navy text-white text-xs font-bold py-3 px-6 rounded hover:bg-blue-900 transition-colors max-w-xs">Request Quote & Datasheet</a>
-                </div>
-            </div>
-
-            <div id="pneumatic" class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-2">
-                <div class="bg-slate-50 p-8 flex justify-center items-center min-h-[300px] md:order-2">
-                    <img id="prod-pneumatic" src="assets/images/products/pneumatic-valves.jpg" alt="Pneumatic Valves" class="max-h-64 object-contain" />
-                </div>
-                <div class="p-8 md:p-12 flex flex-col justify-center md:order-1">
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Category 02</span>
-                    <h2 class="text-2xl font-bold text-schekur-navy mb-4">Pneumatic Actuated Valves</h2>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-6">Heavy-duty rack and pinion aluminum actuators available in dual-acting or fail-safe spring return models. Rack systems feature Namur standard interface connections.</p>
-                    <a href="./contact.html" class="inline-flex justify-center bg-schekur-navy text-white text-xs font-bold py-3 px-6 rounded hover:bg-blue-900 transition-colors max-w-xs">Request Quote & Datasheet</a>
-                </div>
-            </div>
-
-            <div id="manual" class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden grid grid-cols-1 md:grid-cols-2">
-                <div class="bg-slate-50 p-8 flex justify-center items-center min-h-[300px]">
-                    <img id="prod-manual" src="assets/images/products/manual-valves.jpg" alt="Manual Valves" class="max-h-64 object-contain" />
-                </div>
-                <div class="p-8 md:p-12 flex flex-col justify-center">
-                    <span class="text-xs font-bold text-blue-600 uppercase tracking-widest mb-2">Category 03</span>
-                    <h2 class="text-2xl font-bold text-schekur-navy mb-4">Manual Industrial Valves</h2>
-                    <p class="text-sm text-slate-600 leading-relaxed mb-6">High-grade cast steel and stainless steel butterfly, ball, and gate configurations. Features professional leak-proof bubble-tight bidirectional seals built for aggressive pipe fluids.</p>
-                    <a href="./contact.html" class="inline-flex justify-center bg-schekur-navy text-white text-xs font-bold py-3 px-6 rounded hover:bg-blue-900 transition-colors max-w-xs">Request Quote & Datasheet</a>
-                </div>
-            </div>
-
-        </div>
-    </main>
-
-    <section id="admin-panel" class="hidden bg-slate-900 text-white border-t-4 border-blue-600 py-10 px-6 fixed bottom-0 left-0 right-0 z-50 max-h-[40vh] overflow-y-auto shadow-2xl">
-        <div class="container mx-auto max-w-4xl">
-            <div class="flex justify-between items-center mb-4">
-                <h3 class="text-sm font-bold text-schekur-accent tracking-wider uppercase">SCHEKUR Products Page Dashboard</h3>
-                <button onclick="toggleAdminPanel()" class="bg-red-600 text-white px-2 py-1 rounded text-xs font-bold">Close [X]</button>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
-                <div class="bg-slate-800 p-3 rounded">
-                    <label class="block font-bold mb-1">01 Electric Image:</label>
-                    <input type="file" onchange="uploadProductImg(event, 'prod-electric')" class="w-full text-slate-400 file:bg-blue-600 file:text-white file:text-xs file:border-0 file:rounded file:px-2 file:py-1 cursor-pointer"/>
-                </div>
-                <div class="bg-slate-800 p-3 rounded">
-                    <label class="block font-bold mb-1">02 Pneumatic Image:</label>
-                    <input type="file" onchange="uploadProductImg(event, 'prod-pneumatic')" class="w-full text-slate-400 file:bg-blue-600 file:text-white file:text-xs file:border-0 file:rounded file:px-2 file:py-1 cursor-pointer"/>
-                </div>
-                <div class="bg-slate-800 p-3 rounded">
-                    <label class="block font-bold mb-1">03 Manual Image:</label>
-                    <input type="file" onchange="uploadProductImg(event, 'prod-manual')" class="w-full text-slate-400 file:bg-blue-600 file:text-white file:text-xs file:border-0 file:rounded file:px-2 file:py-1 cursor-pointer"/>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-schekur-navy text-slate-400 py-8 border-t border-slate-800 text-center text-xs">
-        <p>&copy; 2026 SCHEKUR. All Rights Reserved. All links forced to relative routing.</p>
-    </footer>
-
-    <script>
-        window.addEventListener('DOMContentLoaded', () => {
-            const targets = ['prod-electric', 'prod-pneumatic', 'prod-manual'];
-            targets.forEach(id => {
-                const saved = localStorage.getItem(id);
-                if (saved) document.getElementById(id).src = saved;
-            });
-        });
-
-        function toggleAdminPanel() {
-            document.getElementById('admin-panel').classList.toggle('hidden');
-        }
-
-        function uploadProductImg(event, targetId) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    document.getElementById(targetId).src = e.target.result;
-                    localStorage.setItem(targetId, e.target.result);
-                }
-                reader.readAsDataURL(file);
-            }
-        }
-    </script>
-</body>
-</html>
+                    <img id="prod-
