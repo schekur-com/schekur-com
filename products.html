@@ -24,32 +24,25 @@
 </head>
 <body class="bg-schekur-gray text-slate-800 font-sans flex flex-col min-h-screen">
 
-    <!-- ========================================== -->
-    <!-- GLOBAL HEADER                              -->
-    <!-- ========================================== -->
     <header class="bg-schekur-navy text-schekur-white shadow-md sticky top-0 z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-6xl">
-            <a href="index.html" class="flex items-center">
-                <img src="assets/images/branding/schekur-logo.png" alt="SCHEKUR Industrial Flow Control Systems" class="h-10 w-auto object-contain" />
+            <a href="./index.html" class="flex items-center">
+                <img src="./assets/images/branding/schekur-logo.png" alt="SCHEKUR Industrial Flow Control Systems" class="h-10 w-auto object-contain" />
             </a>
             <nav class="hidden md:flex space-x-8 font-medium tracking-wide">
-                <a href="index.html" class="hover:text-blue-400 transition-colors pb-1">HOME</a>
-                <a href="corporate.html" class="hover:text-blue-400 transition-colors pb-1">CORPORATE</a>
-                <a href="products.html" class="text-blue-400 font-bold border-b-2 border-blue-400 pb-1">PRODUCTS</a>
-                <a href="technical.html" class="hover:text-blue-400 transition-colors pb-1">TECHNICAL DATA</a>
-                <a href="contact.html" class="hover:text-blue-400 transition-colors pb-1">CONTACT</a>
+                <a href="./index.html" class="hover:text-blue-400 transition-colors pb-1">HOME</a>
+                <a href="./products.html" class="text-blue-400 font-bold border-b-2 border-blue-400 pb-1">PRODUCTS</a>
+                <a href="./technical.html" class="hover:text-blue-400 transition-colors pb-1">TECHNICAL DATA</a>
+                <a href="./contact.html" class="hover:text-blue-400 transition-colors pb-1">CONTACT</a>
             </nav>
             <div class="hidden lg:block">
-                <a href="contact.html" class="bg-schekur-white text-schekur-navy px-5 py-2 rounded font-semibold hover:bg-slate-200 transition-all text-sm">
+                <a href="./contact.html" class="bg-schekur-white text-schekur-navy px-5 py-2 rounded font-semibold hover:bg-slate-200 transition-all text-sm">
                     GET A QUOTE
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- ========================================== -->
-    <!-- PAGE TITLE HEADER                          -->
-    <!-- ========================================== -->
     <section class="bg-schekur-navy text-schekur-white py-12 px-4 border-t border-slate-800">
         <div class="container mx-auto max-w-6xl text-center md:text-left">
             <h1 class="text-3xl md:text-4xl font-bold mb-2">Industrial Product Catalog</h1>
@@ -57,43 +50,27 @@
         </div>
     </section>
 
-    <!-- ========================================== -->
-    <!-- CATALOG INNER SIDEBAR & DATA GRID          -->
-    <!-- ========================================== -->
     <div class="container mx-auto max-w-6xl my-12 px-4 flex-grow grid grid-cols-1 lg:grid-cols-4 gap-8">
-        
-        <!-- Left Sidebar Sticky Navigation Menu -->
         <aside class="lg:col-span-1">
             <div class="bg-schekur-white border border-slate-200 rounded-lg p-4 sticky top-24 shadow-sm">
                 <h2 class="font-bold text-schekur-navy text-lg mb-4 border-b pb-2">Categories</h2>
                 <nav class="space-y-1 text-sm font-medium">
                     <a href="#pneumatic" class="block py-2 px-3 rounded text-blue-600 bg-blue-50 hover:bg-blue-50 transition-all">Rotary Pneumatic Actuators</a>
-                    <a href="#electric" class="block py-2 px-3 rounded text-slate-600 hover:bg-slate-50 transition-all">Rotary Electric Actuators</a>
                     <a href="#mini-motorized" class="block py-2 px-3 rounded text-slate-600 hover:bg-slate-50 transition-all">Mini Motorized Valves</a>
-                    <a href="#actuated-valves" class="block py-2 px-3 rounded text-slate-600 hover:bg-slate-50 transition-all">Pneumatically Actuated Valves</a>
-                    <a href="#electric-valves" class="block py-2 px-3 rounded text-slate-600 hover:bg-slate-50 transition-all">Electrically Actuated Valves</a>
-                    <a href="#direct-mount" class="block py-2 px-3 rounded text-slate-600 hover:bg-slate-50 transition-all">Direct Mount & Bare Shaft</a>
                 </nav>
             </div>
         </aside>
 
-        <!-- Right Side Product List Container -->
         <main class="lg:col-span-3 space-y-16">
-
-            <!-- GROUP 1: PNEUMATIC ACTUATORS -->
             <section id="pneumatic" class="bg-schekur-white border border-slate-200 rounded-lg p-6 shadow-sm scroll-mt-24">
                 <div class="flex flex-col md:flex-row gap-6 mb-6">
-                    <img src="assets/images/products/pneumatic-actuators.jpg" alt="SCHEKUR Pneumatic Actuators" class="w-full md:w-48 h-48 object-cover rounded bg-slate-100" />
+                    <img src="./assets/images/products/pneumatic-actuators.jpg" alt="SCHEKUR Pneumatic Actuators" class="w-full md:w-48 h-48 object-cover rounded bg-slate-100" />
                     <div>
                         <span class="text-xs font-bold uppercase text-blue-600 tracking-wider">Product Family 01</span>
                         <h2 class="text-2xl font-bold text-schekur-navy mt-1 mb-3">Rotary Pneumatic Actuators</h2>
-                        <p class="text-sm text-schekur-steel leading-relaxed">
-                            Engineered for high-duty industrial cycle performance. Available in double acting and spring return variants with integrated ISO 5211 standard actuator interfaces. Perfect for quarter-turn ball and butterfly control operations.
-                        </p>
+                        <p class="text-sm text-schekur-steel leading-relaxed">Engineered for high-duty industrial cycle performance. Available in double acting and spring return variants with integrated ISO 5211 standard interfaces.</p>
                     </div>
                 </div>
-                
-                <!-- Technical Data Table -->
                 <div class="overflow-x-auto">
                     <table class="w-full text-left text-xs border-collapse">
                         <thead>
@@ -102,7 +79,6 @@
                                 <th class="p-3">Operation Mode</th>
                                 <th class="p-3">Torque Outputs</th>
                                 <th class="p-3">Air Supply Limit</th>
-                                <th class="p-3">Housing Standard</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-100 text-slate-700">
@@ -111,98 +87,73 @@
                                 <td class="p-3">Double Acting</td>
                                 <td class="p-3">9 Nm to 4520 Nm</td>
                                 <td class="p-3">2.5 Bar to 8 Bar</td>
-                                <td class="p-3">Extruded Aluminum AL6063</td>
                             </tr>
                             <tr>
                                 <td class="p-3 font-semibold text-blue-600">SCHEKUR-DSR</td>
                                 <td class="p-3">Spring Return / Single</td>
                                 <td class="p-3">4 Nm to 1200 Nm</td>
                                 <td class="p-3">3.0 Bar to 8 Bar</td>
-                                <td class="p-3">Extruded Aluminum AL6063</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
 
-            <!-- GROUP 3: MINI MOTORIZED VALVES -->
             <section id="mini-motorized" class="bg-schekur-white border border-slate-200 rounded-lg p-6 shadow-sm scroll-mt-24">
                 <div class="flex flex-col md:flex-row gap-6 mb-6">
-                    <img src="assets/images/products/mini-motorized-valves.jpg" alt="SCHEKUR Mini Motorized Valves" class="w-full md:w-48 h-48 object-cover rounded bg-slate-100" />
+                    <img src="./assets/images/products/mini-motorized-valves.jpg" alt="SCHEKUR Mini Motorized Valves" class="w-full md:w-48 h-48 object-cover rounded bg-slate-100" />
                     <div>
-                        <span class="text-xs font-bold uppercase text-blue-600 tracking-wider">Product Family 03</span>
+                        <span class="text-xs font-bold uppercase text-blue-600 tracking-wider">Product Family 02</span>
                         <h2 class="text-2xl font-bold text-schekur-navy mt-1 mb-3">Mini Motorized Valves (EVM / EVL / EVT)</h2>
-                        <p class="text-sm text-schekur-steel leading-relaxed">
-                            Ultra-compact configurations built for water management, utility lines, and automated chemical treatment processes. Incorporates automated smart integrated timer control sets.
-                        </p>
+                        <p class="text-sm text-schekur-steel leading-relaxed">Ultra-compact configurations built for water management, utility lines, and automated chemical treatment processes.</p>
                     </div>
                 </div>
-                
-                <!-- Technical Data Table -->
                 <div class="overflow-x-auto">
                     <table class="w-full text-left text-xs border-collapse">
                         <thead>
                             <tr class="bg-slate-100 text-schekur-navy uppercase font-bold border-b border-slate-200">
                                 <th class="p-3">Model / Series</th>
-                                <th class="p-3">Available NPT/BSP Sizes</th>
-                                <th class="p-3">Max Pressure Limit</th>
-                                <th class="p-3">Voltage Configurations</th>
-                                <th class="p-3">Body Seals Type</th>
+                                <th class="p-3">Available Sizes</th>
+                                <th class="p-3">Max Pressure</th>
+                                <th class="p-3">Voltage</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-slate-100 text-slate-700">
                             <tr>
                                 <td class="p-3 font-semibold text-blue-600">SCHEKUR-EVM / EVL</td>
                                 <td class="p-3">1/2", 3/4", 1"</td>
-                                <td class="p-3">Max 15 Bar (PN15)</td>
+                                <td class="p-3">Max 15 Bar</td>
                                 <td class="p-3">220VAC / 24VDC</td>
-                                <td class="p-3">Stainless Steel / PTFE</td>
-                            </tr>
-                            <tr>
-                                <td class="p-3 font-semibold text-blue-600">SCHEKUR-EVT (Timer Control)</td>
-                                <td class="p-3">1/2", 3/4"</td>
-                                <td class="p-3">Max 10 Bar (PN10)</td>
-                                <td class="p-3">220VAC</td>
-                                <td class="p-3">Brass / FKM / PTFE</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
             </section>
-
         </main>
     </div>
 
-    <!-- ========================================== -->
-    <!-- GLOBAL FOOTER                              -->
-    <!-- ========================================== -->
     <footer class="bg-schekur-navy text-schekur-white pt-12 pb-6 border-t border-slate-800">
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl text-sm">
             <div>
-                <img src="assets/images/branding/schekur-logo.png" alt="SCHEKUR" class="h-8 mb-4 object-contain" />
-                <p class="text-slate-400 leading-relaxed">
-                    High-performance industrial flow control systems. Manufacturing premium pneumatic actuators, electric actuators, and automated valve solutions.
-                </p>
+                <img src="./assets/images/branding/schekur-logo.png" alt="SCHEKUR" class="h-8 mb-4 object-contain" />
+                <p class="text-slate-400 leading-relaxed">High-performance industrial flow control systems.</p>
             </div>
             <div>
                 <h4 class="text-base font-bold mb-4 border-b border-slate-700 pb-2">EXPORT QUICK LINKS</h4>
                 <ul class="space-y-2 text-slate-400">
-                    <li><a href="index.html" class="hover:text-white">&bull; Home / Overview</a></li>
-                    <li><a href="corporate.html" class="hover:text-white">&bull; Corporate Profile</a></li>
-                    <li><a href="technical.html" class="hover:text-white">&bull; Engineering Downloads</a></li>
-                    <li><a href="contact.html" class="hover:text-white">&bull; International Enquiries</a></li>
+                    <li><a href="./index.html" class="hover:text-white">&bull; Home</a></li>
+                    <li><a href="./technical.html" class="hover:text-white">&bull; Engineering Downloads</a></li>
+                    <li><a href="./contact.html" class="hover:text-white">&bull; International Enquiries</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="text-base font-bold mb-4 border-b border-slate-700 pb-2">COMMERCIAL HEADQUARTERS</h4>
-                <p class="text-slate-400 mb-2"><strong>Email:</strong> info@schekur.com</p>
-                <p class="text-slate-400">Please provide media viscosity and target flange execution configurations on all request documents.</p>
+                <p class="text-slate-400 mb-2"><strong>Email:</strong> export@schekur.com</p>
             </div>
         </div>
         <div class="container mx-auto px-4 mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
             &copy; 2026 SCHEKUR. All Rights Reserved. Fully Export-Oriented Platform.
         </div>
     </footer>
-
 </body>
 </html>
