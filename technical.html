@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCHEKUR | Technical Data & Engineering Downloads</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        schekur: {
+                            navy: '#031A30',
+                            white: '#FFFFFF',
+                            gray: '#F4F6F9',
+                            steel: '#4A5568'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-schekur-gray text-slate-800 font-sans flex flex-col min-h-screen">
+
+    <!-- ========================================== -->
+    <!-- GLOBAL HEADER                              -->
+    <!-- ========================================== -->
+    <header class="bg-schekur-navy text-schekur-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-6xl">
+            <a href="index.html" class="flex items-center">
+                <img src="assets/images/branding/schekur-logo.png" alt="SCHEKUR Industrial Flow Control Systems" class="h-10 w-auto object-contain" />
+            </a>
+            <nav class="hidden md:flex space-x-8 font-medium tracking-wide">
+                <a href="index.html" class="hover:text-blue-400 transition-colors pb-1">HOME</a>
+                <a href="corporate.html" class="hover:text-blue-400 transition-colors pb-1">CORPORATE</a>
+                <a href="products.html" class="hover:text-blue-400 transition-colors pb-1">PRODUCTS</a>
+                <a href="technical.html" class="text-blue-400 font-bold border-b-2 border-blue-400 pb-1">TECHNICAL DATA</a>
+                <a href="contact.html" class="hover:text-blue-400 transition-colors pb-1">CONTACT</a>
+            </nav>
+            <div class="hidden lg:block">
+                <a href="contact.html" class="bg-schekur-white text-schekur-navy px-5 py-2 rounded font-semibold hover:bg-slate-200 transition-all text-sm">
+                    GET A QUOTE
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- PAGE TITLE HEADER                          -->
+    <!-- ========================================== -->
+    <section class="bg-schekur-navy text-schekur-white py-12 px-4 border-t border-slate-800">
+        <div class="container mx-auto max-w-6xl text-center md:text-left">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">Technical Resources</h1>
+            <p class="text-slate-400 text-sm md:text-base">Access official SCHEKUR datasheets, user manuals, certificates, and flow calculation dimensions.</p>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- TECHNICAL DOWNLOAD CENTER CONTENT          -->
+    <!-- ========================================== -->
+    <main class="flex-grow container mx-auto max-w-6xl my-12 px-4">
+        
+        <!-- Section 1: Product Datasheets & Catalogs -->
+        <div class="mb-14">
+            <h2 class="text-2xl font-bold text-schekur-navy mb-6 pb-2 border-b border-slate-200 flex items-center">
+                <span class="mr-2">📋</span> Product Datasheets & Catalogs
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Item 1 -->
+                <div class="bg-schekur-white p-5 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:border-blue-400 transition-all">
+                    <div>
+                        <span class="text-[10px] font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded uppercase">PDF Catalog</span>
+                        <h3 class="font-bold text-schekur-navy text-base mt-2 mb-1">Rotary Pneumatic Actuators</h3>
+                        <p class="text-xs text-schekur-steel mb-4">Complete dimension charts, air consumption tables, and torque profiles for DDA & DSR series.</p>
+                    </div>
+                    <a href="assets/docs/schekur-pneumatic-actuators-catalog.pdf" download class="inline-flex items-center justify-center bg-schekur-navy hover:bg-slate-800 text-white text-xs font-bold py-2 px-4 rounded transition-colors w-full text-center">
+                        📥 Download Specifications (EN)
+                    </a>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-schekur-white p-5 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:border-blue-400 transition-all">
+                    <div>
+                        <span class="text-[10px] font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded uppercase">PDF Datasheet</span>
+                        <h3 class="font-bold text-schekur-navy text-base mt-2 mb-1">Mini Motorized Valves Series</h3>
+                        <p class="text-xs text-schekur-steel mb-4">Wiring diagrams, open/close time intervals, and current thresholds for EVM, EVL, and EVT timer variants.</p>
+                    </div>
+                    <a href="assets/docs/schekur-mini-motorized-valves-datasheet.pdf" download class="inline-flex items-center justify-center bg-schekur-navy hover:bg-slate-800 text-white text-xs font-bold py-2 px-4 rounded transition-colors w-full text-center">
+                        📥 Download Specifications (EN)
+                    </a>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-schekur-white p-5 rounded-lg border border-slate-200 shadow-sm flex flex-col justify-between hover:border-blue-400 transition-all">
+                    <div>
+                        <span class="text-[10px] font-bold bg-blue-100 text-blue-800 px-2 py-0.5 rounded uppercase">User Manual</span>
+                        <h3 class="font-bold text-schekur-navy text-base mt-2 mb-1">Installation & Maintenance</h3>
+                        <p class="text-xs text-schekur-steel mb-4">Step-by-step fluid alignment instructions and actuator calibration limits for field engineers.</p>
+                    </div>
+                    <a href="assets/docs/schekur-installation-maintenance-manual.pdf" download class="inline-flex items-center justify-center bg-schekur-navy hover:bg-slate-800 text-white text-xs font-bold py-2 px-4 rounded transition-colors w-full text-center">
+                        📥 Download Specifications (EN)
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Section 2: Quality & International Compliance Declarations -->
+        <div>
+            <h2 class="text-2xl font-bold text-schekur-navy mb-6 pb-2 border-b border-slate-200 flex items-center">
+                <span class="mr-2">🛡️</span> Quality & Global Compliance
+            </h2>
+            <div class="bg-schekur-white border border-slate-200 rounded-lg p-6 shadow-sm">
+                <p class="text-sm text-schekur-steel mb-6 leading-relaxed">
+                    SCHEKUR products are built and tested strictly in compliance with global directive criteria. Download our legal manufacturer quality certificates below to clear global customs processing and internal engineering clearance loops.
+                </p>
+                
+                <div class="divide-y divide-slate-200">
+                    <!-- Cert 1 -->
+                    <div class="py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                        <div>
+                            <h4 class="font-bold text-schekur-navy text-sm">CE Declaration of Conformity (Directive 2014/68/EU)</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Pressure Equipment Directive (PED) validation for automated assemblies.</p>
+                        </div>
+                        <a href="assets/docs/schekur-ce-conformity.pdf" download class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center shrink-0">
+                            Download Certificate (PDF) &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                        <div>
+                            <h4 class="font-bold text-schekur-navy text-sm">ISO 9001:2015 Quality Management Standards</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Verified factory engineering processes, inventory workflows, and tracking.</p>
+                        </div>
+                        <a href="assets/docs/schekur-iso-9001.pdf" download class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center shrink-0">
+                            Download Certificate (PDF) &rarr;
+                        </a>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="py-4 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
+                        <div>
+                            <h4 class="font-bold text-schekur-navy text-sm">SIL 3 Capable Certification - Safety Integrity Level</h4>
+                            <p class="text-xs text-slate-500 mt-0.5">Pneumatic actuator functional safety verification for hazardous process lines.</p>
+                        </div>
+                        <a href="assets/docs/schekur-sil3-actuators.pdf" download class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center shrink-0">
+                            Download Certificate (PDF) &rarr;
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ========================================== -->
+    <!-- GLOBAL FOOTER                              -->
+    <!-- ========================================== -->
+    <footer class="bg-schekur-navy text-schekur-white pt-12 pb-6 border-t border-slate-800">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl text-sm">
+            <div>
+                <img src="assets/images/branding/schekur-logo.png" alt="SCHEKUR" class="h-8 mb-4 object-contain" />
+                <p class="text-slate-400 leading-relaxed">
+                    High-performance industrial flow control systems. Manufacturing premium pneumatic actuators, electric actuators, and automated valve solutions.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-base font-bold mb-4 border-b border-slate-700 pb-2">EXPORT QUICK LINKS</h4>
+                <ul class="space-y-2 text-slate-400">
+                    <li><a href="index.html" class="hover:text-white">&bull; Home / Overview</a></li>
+                    <li><a href="corporate.html" class="hover:text-white">&bull; Corporate Profile</a></li>
+                    <li><a href="products.html" class="hover:text-white">&bull; Product Catalog</a></li>
+                    <li><a href="contact.html" class="hover:text-white">&bull; International Enquiries</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-base font-bold mb-4 border-b border-slate-700 pb-2">COMMERCIAL HEADQUARTERS</h4>
+                <p class="text-slate-400 mb-1"><strong>Email:</strong> export@schekur.com</p>
+                <p class="text-slate-400"><strong>Tel:</strong> +90 540 644 55 29</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
+            &copy; 2026 SCHEKUR. All Rights Reserved. Fully Export-Oriented Platform.
+        </div>
+    </footer>
+
+</body>
+</html>
