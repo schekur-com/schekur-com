@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SCHEKUR | Industrial Flow Control Systems</title>
+    <title>SCHEKUR | Premium Flow Control Systems</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -12,9 +12,10 @@
                     colors: {
                         schekur: {
                             navy: '#031A30',
-                            white: '#FFFFFF',
-                            gray: '#F4F6F9',
-                            steel: '#4A5568'
+                            blue: '#1E40AF',
+                            accent: '#0EA5E9',
+                            gray: '#F8FAFC',
+                            slate: '#334155'
                         }
                     }
                 }
@@ -22,90 +23,209 @@
         }
     </script>
 </head>
-<body class="bg-schekur-gray text-slate-800 font-sans flex flex-col min-h-screen">
+<body class="bg-schekur-gray text-slate-900 font-sans flex flex-col min-h-screen antialiased">
 
-    <header class="bg-schekur-navy text-schekur-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="./index.html" class="flex items-center">
-                <img src="./assets/images/branding/schekur-logo.png" alt="SCHEKUR Industrial Flow Control Systems" class="h-10 w-auto object-contain" />
+    <!-- HEADER / NAVIGATION -->
+    <header class="bg-schekur-navy text-white shadow-lg sticky top-0 z-50 backdrop-blur-md bg-opacity-95 border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+            <a href="index.html" class="flex items-center space-x-2">
+                <img src="assets/images/branding/schekur-logo.png" alt="SCHEKUR" class="h-9 w-auto object-contain" />
             </a>
-            <nav class="hidden md:flex space-x-8 font-medium tracking-wide">
-                <a href="./index.html" class="text-blue-400 font-bold border-b-2 border-blue-400 pb-1">HOME</a>
-                <a href="./products.html" class="hover:text-blue-400 transition-colors pb-1">PRODUCTS</a>
-                <a href="./technical.html" class="hover:text-blue-400 transition-colors pb-1">TECHNICAL DATA</a>
-                <a href="./contact.html" class="hover:text-blue-400 transition-colors pb-1">CONTACT</a>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wider">
+                <a href="index.html" class="text-schekur-accent border-b-2 border-schekur-accent pb-1">HOME</a>
+                <a href="products.html" class="hover:text-schekur-accent transition-colors pb-1">PRODUCTS</a>
+                <a href="technical.html" class="hover:text-schekur-accent transition-colors pb-1">TECHNICAL DATA</a>
+                <a href="contact.html" class="hover:text-schekur-accent transition-colors pb-1">CONTACT</a>
             </nav>
-            <div class="hidden lg:block">
-                <a href="./contact.html" class="bg-schekur-white text-schekur-navy px-5 py-2 rounded font-semibold hover:bg-slate-200 transition-all text-sm tracking-wide">
-                    GET A QUOTE
+            <div class="hidden sm:block">
+                <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-md font-bold text-xs tracking-widest transition-all shadow-md uppercase">
+                    Get A Quote
                 </a>
             </div>
         </div>
     </header>
 
-    <section class="bg-gradient-to-r from-[#021120] to-schekur-navy text-schekur-white py-24 px-4 relative overflow-hidden">
+    <!-- HERO SECTION -->
+    <section class="relative bg-gradient-to-b from-[#021120] via-schekur-navy to-slate-900 text-white py-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e2e8f0_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="container mx-auto max-w-5xl text-center relative z-10">
-            <span class="text-blue-400 font-bold tracking-widest text-sm uppercase block mb-3">Premium Valve Automation & Flow Control</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">Engineered for Global Industrial Performance</h1>
-            <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">Discover SCHEKUR's high-reliability rotary actuators, timer-controlled mini motorized valves, and specialized process automation hardware.</p>
-            <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="./products.html" class="bg-blue-600 text-white font-semibold px-8 py-3 rounded hover:bg-blue-700 transition-all shadow-lg">Explore Product Catalog</a>
-                <a href="./technical.html" class="border border-slate-500 hover:border-white text-white font-semibold px-8 py-3 rounded transition-all">Technical Sheets</a>
+            <span class="inline-flex items-center gap-1.5 py-1.5 px-3 rounded-full text-xs font-semibold bg-blue-500/10 text-schekur-accent mb-4 border border-blue-500/20 uppercase tracking-widest">
+                Premium Valve Automation & Flow Control
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight bg-gradient-to-r from-white via-slate-100 to-slate-300 bg-clip-text text-transparent">
+                Engineered for Global<br class="hidden md:inline"/> Industrial Performance
+            </h1>
+            <p class="text-base md:text-lg text-slate-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Discover SCHEKUR's high-reliability rotary actuators, smart integrated solenoid units, and specialized process automation hardware.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#catalog" class="w-full sm:w-auto bg-blue-600 text-white font-bold px-8 py-3.5 rounded-md hover:bg-blue-700 transition-all shadow-lg hover:shadow-blue-500/20 text-sm tracking-wide">
+                    Explore Product Ranges
+                </a>
+                <a href="technical.html" class="w-full sm:w-auto border border-slate-600 hover:border-white text-slate-200 font-bold px-8 py-3.5 rounded-md transition-all text-sm tracking-wide bg-white/5 hover:bg-white/10">
+                    Technical Sheets
+                </a>
             </div>
         </div>
     </section>
 
-    <main class="flex-grow py-16 px-4">
-        <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-schekur-navy mb-3">Our Core Product Ranges</h2>
-                <p class="text-schekur-steel">High-performance flow management components matching premium technical specifications.</p>
+    <!-- TRUST & SPECIFICATION BADGES -->
+    <section class="bg-white border-b border-slate-200 py-10 shadow-sm relative z-20 -mt-8 max-w-6xl mx-auto rounded-xl px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 flex flex-col items-center border-r border-slate-100 last:border-0">
+                <div class="text-3xl mb-2 text-blue-600">🛡️</div>
+                <h4 class="font-bold text-slate-800 text-sm tracking-wide">CORROSION RESISTANT</h4>
+                <p class="text-xs text-slate-500 mt-1">Built for tough environments</p>
             </div>
+            <div class="p-4 flex flex-col items-center border-r border-slate-100 last:border-0">
+                <div class="text-3xl mb-2 text-blue-600">⚙️</div>
+                <h4 class="font-bold text-slate-800 text-sm tracking-wide">HIGH PERFORMANCE</h4>
+                <p class="text-xs text-slate-500 mt-1">Tested & certified cycles</p>
+            </div>
+            <div class="p-4 flex flex-col items-center border-r border-slate-100 last:border-0">
+                <div class="text-3xl mb-2 text-blue-600">⏱️</div>
+                <h4 class="font-bold text-slate-800 text-sm tracking-wide">EASY INSTALLATION</h4>
+                <p class="text-xs text-slate-500 mt-1">Designed for quick setup</p>
+            </div>
+            <div class="p-4 flex flex-col items-center">
+                <div class="text-3xl mb-2 text-blue-600">🌐</div>
+                <h4 class="font-bold text-slate-800 text-sm tracking-wide">GLOBAL STANDARDS</h4>
+                <p class="text-xs text-slate-500 mt-1">International norms compliance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CORE PRODUCT CATALOG -->
+    <main id="catalog" class="flex-grow py-20 px-6">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-schekur-navy mb-4 tracking-tight">Our Core Product Ranges</h2>
+                <p class="text-slate-600 max-w-xl mx-auto text-sm md:text-base">High-performance flow management components matching premium technical specifications.</p>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- PRODUCT GRID -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-schekur-white rounded-lg shadow-sm border border-slate-200 p-6 flex flex-col hover:shadow-md transition-all">
-                    <img src="./assets/images/products/pneumatic-actuators.jpg" alt="SCHEKUR Rotary Pneumatic Actuators" class="w-full h-48 object-cover rounded mb-4 bg-slate-100" />
-                    <h3 class="text-xl font-bold text-schekur-navy mb-2">Rotary Pneumatic Actuators</h3>
-                    <p class="text-sm text-schekur-steel flex-grow mb-4">Double acting and spring return configurations engineered for precise quarter-turn valve control.</p>
-                    <a href="./products.html#pneumatic" class="text-blue-600 font-semibold text-sm hover:underline flex items-center">View Specs &rarr;</a>
+                
+                <!-- 01 Electric Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img src="assets/images/products/electric-valves.jpg" alt="Electric Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">01</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2 group-hover:text-blue-600 transition-colors">Electric Valves & Actuators</h3>
+                        <p class="text-xs text-slate-600 flex-grow leading-relaxed mb-4">On/off and proportional multi-voltage actuators featuring robust IP67/IP68 industrial protection enclosures.</p>
+                        <a href="products.html#electric" class="inline-flex items-center text-xs font-bold text-blue-600 hover:text-blue-800 gap-1 mt-auto">
+                            View Engineering Specs <span>&rarr;</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="bg-schekur-white rounded-lg shadow-sm border border-slate-200 p-6 flex flex-col hover:shadow-md transition-all">
-                    <img src="./assets/images/products/electric-actuators.jpg" alt="SCHEKUR Rotary Electric Actuators" class="w-full h-48 object-cover rounded mb-4 bg-slate-100" />
-                    <h3 class="text-xl font-bold text-schekur-navy mb-2">Rotary Electric Actuators</h3>
-                    <p class="text-sm text-schekur-steel flex-grow mb-4">On/off and proportional multi-voltage actuators featuring robust IP67/IP68 industrial protection enclosures.</p>
-                    <a href="./products.html#electric" class="text-blue-600 font-semibold text-sm hover:underline flex items-center">View Specs &rarr;</a>
+
+                <!-- 02 Pneumatic Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img src="assets/images/products/pneumatic-valves.jpg" alt="Pneumatic Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">02</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2 group-hover:text-blue-600 transition-colors">Pneumatic Actuated Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow leading-relaxed mb-4">Double acting and spring return configurations engineered for high-duty precise quarter-turn vana control solutions.</p>
+                        <a href="products.html#pneumatic" class="inline-flex items-center text-xs font-bold text-blue-600 hover:text-blue-800 gap-1 mt-auto">
+                            View Engineering Specs <span>&rarr;</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="bg-schekur-white rounded-lg shadow-sm border border-slate-200 p-6 flex flex-col hover:shadow-md transition-all">
-                    <img src="./assets/images/products/mini-motorized-valves.jpg" alt="SCHEKUR Mini Motorized Valves" class="w-full h-48 object-cover rounded mb-4 bg-slate-100" />
-                    <h3 class="text-xl font-bold text-schekur-navy mb-2">Mini Motorized Valves</h3>
-                    <p class="text-sm text-schekur-steel flex-grow mb-4">EVM, EVL, EVT series and smart integrated timer-controlled mini valves up to 15 Bar limits.</p>
-                    <a href="./products.html#mini-motorized" class="text-blue-600 font-semibold text-sm hover:underline flex items-center">View Specs &rarr;</a>
+
+                <!-- 03 Manual Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img src="assets/images/products/manual-valves.jpg" alt="Manual Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">03</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2 group-hover:text-blue-600 transition-colors">Manual Industrial Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow leading-relaxed mb-4">Heavy-duty butterfly, ball, and check manual valves offering superior sealing and long-term fluid lifecycle reliability.</p>
+                        <a href="products.html#manual" class="inline-flex items-center text-xs font-bold text-blue-600 hover:text-blue-800 gap-1 mt-auto">
+                            View Engineering Specs <span>&rarr;</span>
+                        </a>
+                    </div>
                 </div>
+
+                <!-- 04 Pressure Reducing Valves -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img src="assets/images/products/pressure-valves.jpg" alt="Pressure Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">04</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2 group-hover:text-blue-600 transition-colors">Pressure & Safety Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow leading-relaxed mb-4">Precision regulating configurations and mechanical safety components built for strict industrial overpressure loops.</p>
+                        <a href="products.html#pressure" class="inline-flex items-center text-xs font-bold text-blue-600 hover:text-blue-800 gap-1 mt-auto">
+                            View Engineering Specs <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 05 Premium Technical Background Showcase (rs=w_1280,h_853.webp adaptasyonu) -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img src="assets/images/products/rs=w_1280,h_853.webp" alt="SCHEKUR Engineering Lab" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">05</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2 group-hover:text-blue-600 transition-colors">Expert Fluid Series</h3>
+                        <p class="text-xs text-slate-600 flex-grow leading-relaxed mb-4">High sensitivity hardware structures calibrated globally under verified fluid testing laboratory procedures.</p>
+                        <a href="technical.html" class="inline-flex items-center text-xs font-bold text-blue-600 hover:text-blue-800 gap-1 mt-auto">
+                            View Laboratory Data <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 06 Solenoid Valves (Geniş Banner Alanı - solenoid-valves.jpg adaptasyonu) -->
+                <div class="bg-white rounded-xl shadow-md border border-slate-200/80 overflow-hidden flex flex-col hover:shadow-xl transition-all group md:col-span-2 lg:col-span-1">
+                    <div class="relative bg-slate-50 p-6 flex justify-center items-center aspect-[4/3] border-b border-slate-100">
+                        <img src="assets/images/products/solenoid-valves.jpg" alt="Solenoid Valves" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" />
+                        <span class="absolute top-4 left-4 bg-blue-600 text-white text-xs font-black px-2.5 py-1 rounded">06</span>
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-lg font-bold text-schekur-navy mb-2 group-hover:text-blue-600 transition-colors">Industrial Solenoid Valves</h3>
+                        <p class="text-xs text-slate-600 flex-grow leading-relaxed mb-4">General purpose, zero-pressure, and direct-acting brass or stainless steel solenoid variations for chemical line alignments.</p>
+                        <a href="products.html#solenoid" class="inline-flex items-center text-xs font-bold text-blue-600 hover:text-blue-800 gap-1 mt-auto">
+                            Explore Solenoid Specs <span>&rarr;</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </main>
 
-    <footer class="bg-schekur-navy text-schekur-white pt-12 pb-6 border-t border-slate-800">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl text-sm">
+    <!-- FOOTER -->
+    <footer class="bg-schekur-navy text-white pt-16 pb-8 border-t border-slate-800">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl text-sm">
             <div>
-                <img src="./assets/images/branding/schekur-logo.png" alt="SCHEKUR" class="h-8 mb-4 object-contain" />
-                <p class="text-slate-400 leading-relaxed">High-performance industrial flow control systems. Manufacturing premium pneumatic actuators, electric actuators, and automated valve solutions.</p>
+                <img src="assets/images/branding/schekur-logo.png" alt="SCHEKUR" class="h-8 mb-5 object-contain" />
+                <p class="text-slate-400 leading-relaxed text-xs">
+                    High-performance industrial flow control systems. Manufacturing premium pneumatic actuators, multi-voltage electric actuators, and certified process engineering automation.
+                </p>
             </div>
             <div>
-                <h4 class="text-lg font-bold mb-4 border-b border-slate-700 pb-2 tracking-wide">EXPORT CATALOG</h4>
-                <ul class="space-y-2 text-slate-400">
-                    <li><a href="./products.html#pneumatic" class="hover:text-white transition-colors">• Pneumatic Actuators</a></li>
-                    <li><a href="./products.html#electric" class="hover:text-white transition-colors">• Electric Actuators</a></li>
-                    <li><a href="./products.html#mini-motorized" class="hover:text-white transition-colors">• Mini Motorized Valves</a></li>
+                <h4 class="text-xs font-bold uppercase tracking-widest text-slate-300 mb-4 border-l-2 border-blue-600 pl-2">Quick Navigation</h4>
+                <ul class="space-y-2.5 text-xs text-slate-400 font-medium">
+                    <li><a href="products.html" class="hover:text-white transition-colors">• Product Catalog</a></li>
+                    <li><a href="technical.html" class="hover:text-white transition-colors">• Technical Resources</a></li>
+                    <li><a href="contact.html" class="hover:text-white transition-colors">• International RFQ</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="text-lg font-bold mb-4 border-b border-slate-700 pb-2 tracking-wide">INTERNATIONAL INQUIRIES</h4>
-                <p class="text-sm text-slate-400 mb-2"><strong>Email:</strong> export@schekur.com</p>
-                <p class="text-sm text-slate-400">For global distributor pricing agreements, get in touch with our engineering desks.</p>
+                <h4 class="text-xs font-bold uppercase tracking-widest text-slate-300 mb-4 border-l-2 border-blue-600 pl-2">Global Desks</h4>
+                <p class="text-xs text-slate-400 mb-1"><strong>Inquiries:</strong> export@schekur.com</p>
+                <p class="text-xs text-slate-500 leading-relaxed mt-2">Reach out to our sales department for distribution tier pricing agreements.</p>
             </div>
         </div>
-        <div class="container mx-auto px-4 mt-8 pt-6 border-t border-slate-800 text-center text-xs text-slate-500">
-            &copy; 2026 SCHEKUR. All Rights Reserved. Fully Export-Oriented Platform.
+        <div class="container mx-auto px-6 mt-12 pt-6 border-t border-slate-800/60 text-center text-[11px] text-slate-500 tracking-wider">
+            &copy; 2026 SCHEKUR. All Rights Reserved. Designed for Export-Oriented Fluid Operations.
         </div>
     </footer>
 </body>
